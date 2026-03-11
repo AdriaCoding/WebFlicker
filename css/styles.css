@@ -48,6 +48,11 @@ img {
   z-index: 1000;
   background: #ECEFF0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.header--hidden {
+  transform: translateY(-100%);
 }
 
 .nav-wrap {
