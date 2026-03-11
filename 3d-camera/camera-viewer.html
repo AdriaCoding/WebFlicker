@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flicker 3D Viewer</title>
+  <style>
+    html, body {
+      margin: 0;
+      background: transparent;
+    }
+
+    #viewer {
+      width: 700px;
+      height: 500px;
+      margin: 0 auto;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="viewer"></div>
+  <script type="module" src="./camera-viewer.js"></script>
+</body>
+</html>
