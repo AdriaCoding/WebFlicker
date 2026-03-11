@@ -2,6 +2,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-navy: #0a1a2b;
+  --color-navy-rgb: 10, 26, 43;
+  --color-navy-mid: #22384f;
+  --color-accent: #ffc400;
+  --color-text-light: #ecf1f7;
+  --color-text-muted: #e9eef5;
+  --color-text-footer: #d8e0ea;
+  --color-bg-light: #f5f7fa;
+  --color-border-light: #e4e8ee;
+  --radius-card: 16px;
+  --radius-btn: 8px;
+  --radius-download: 10px;
+  --radius-gallery: 14px;
+  --radius-contact: 18px;
+  --section-padding: 84px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +46,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(10, 26, 43, 0.96);
+  background: rgba(var(--color-navy-rgb), 0.96);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -60,19 +78,19 @@ img {
 }
 
 .nav a {
-  color: #e9eef5;
+  color: var(--color-text-muted);
   text-decoration: none;
   font-size: 0.95rem;
 }
 
 .nav a:hover {
-  color: #ffc400;
+  color: var(--color-accent);
 }
 
 .hero{
 
 background-image:
-linear-gradient(rgba(10,26,43,0.75), rgba(10,26,43,0.55)),
+linear-gradient(rgba(var(--color-navy-rgb), 0.75), rgba(var(--color-navy-rgb), 0.55)),
 url('../images/camera8.jpg');
 background-size:cover;
 background-position:center;
@@ -104,7 +122,7 @@ margin-right:auto;
   letter-spacing: 1.5px;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #ffc400;
+  color: var(--color-accent);
   margin-bottom: 14px;
 }
 
@@ -117,7 +135,7 @@ margin-right:auto;
 .hero-text {
   font-size: 1.1rem;
   max-width: 680px;
-  color: #ecf1f7;
+  color: var(--color-text-light);
 }
 
 .hero-buttons {
@@ -131,14 +149,14 @@ margin-right:auto;
   display: inline-block;
   padding: 14px 24px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: var(--radius-btn);
   font-weight: 700;
   transition: 0.25s ease;
 }
 
 .btn-primary {
-  background: #ffc400;
-  color: #0a1a2b;
+  background: var(--color-accent);
+  color: var(--color-navy);
 }
 
 .btn-primary:hover {
@@ -155,7 +173,7 @@ margin-right:auto;
 }
 
 .section {
-  padding: 84px 0;
+  padding: var(--section-padding) 0;
 }
 
 .section h2 {
@@ -166,7 +184,7 @@ margin-right:auto;
 }
 
 .section-dark {
-  background: #0a1a2b;
+  background: var(--color-navy);
   color: #ffffff;
 }
 
@@ -181,7 +199,7 @@ margin-right:auto;
 .about-box,
 .contact-box,
 .card {
-  border-radius: 16px;
+  border-radius: var(--radius-card);
 }
 
 .highlight-box {
@@ -193,7 +211,7 @@ margin-right:auto;
 .stat {
   font-size: 3rem;
   font-weight: 800;
-  color: #ffc400;
+  color: var(--color-accent);
   line-height: 1;
   margin-bottom: 12px;
 }
@@ -218,8 +236,8 @@ margin-right:auto;
 }
 
 .card.light {
-  background: #f5f7fa;
-  border: 1px solid #e4e8ee;
+  background: var(--color-bg-light);
+  border: 1px solid var(--color-border-light);
 }
 
 .card h3 {
@@ -238,15 +256,15 @@ margin-right:auto;
 .download-link {
   display: inline-block;
   padding: 14px 18px;
-  border-radius: 10px;
+  border-radius: var(--radius-download);
   text-decoration: none;
   background: #ffffff;
-  color: #0a1a2b;
+  color: var(--color-navy);
   font-weight: 700;
 }
 
 .download-link:hover {
-  background: #ffc400;
+  background: var(--color-accent);
 }
 
 .gallery {
@@ -260,7 +278,7 @@ margin-right:auto;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: var(--radius-gallery);
   box-shadow: 0 12px 24px rgba(0,0,0,0.08);
 }
 
@@ -280,7 +298,7 @@ margin-right:auto;
 }
 
 .contact-section {
-  background: #f5f7fa;
+  background: var(--color-bg-light);
 }
 
 .contact-box {
@@ -290,7 +308,7 @@ margin-right:auto;
   align-items: start;
   background: #ffffff;
   padding: 34px;
-  border-radius: 18px;
+  border-radius: var(--radius-contact);
   box-shadow: 0 14px 36px rgba(16, 24, 40, 0.08);
 }
 
@@ -299,8 +317,8 @@ margin-right:auto;
 }
 
 .footer {
-  background: #0a1a2b;
-  color: #d8e0ea;
+  background: var(--color-navy);
+  color: var(--color-text-footer);
   padding: 22px 0;
 }
 
@@ -332,6 +350,10 @@ margin-right:auto;
 }
 
 @media (max-width: 720px) {
+  .hero-product {
+    display: none;
+  }
+
   .nav-wrap {
     flex-direction: column;
     align-items: flex-start;
