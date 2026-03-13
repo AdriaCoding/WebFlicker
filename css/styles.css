@@ -324,6 +324,15 @@ img {
   padding: var(--section-padding) 0;
 }
 
+.section-kicker {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 14px;
+}
+
 .section h2 {
   font-size: clamp(1.8rem, 3vw, 3rem);
   line-height: 1.15;
