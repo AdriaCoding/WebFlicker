@@ -1,0 +1,5 @@
+# Usar index.html como página por defecto al entrar en este directorio
+DirectoryIndex index.html
+
+# Opcional: desactivar listado de directorios por seguridad
+Options -Indexes
