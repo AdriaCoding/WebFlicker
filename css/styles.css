@@ -528,6 +528,11 @@ img {
   display: block;
 }
 
+.tech-cta {
+  margin-top: 40px;
+  text-align: left;
+}
+
 @media (min-width: 1024px) {
   .tech-demo-grid {
     display: grid;
