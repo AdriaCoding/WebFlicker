@@ -1,20 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Flicker Traffic | Seguridad Vial Inteligente</title>
-  <meta name="description" content="Tecnología 3D para seguridad vial, fiscalización inteligente, trazabilidad de evidencia y soluciones B2G." />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
-
-  <header class="header">
-    <div class="container nav-wrap">
-      <div class="logo">
-        <img src="./images/logo-flicker-traffic.png" alt="Flicker Traffic">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flicker Traffic | Seguridad Vial Inteligente</title>
+    <meta
+      name="description"
+      content="Tecnología 3D para seguridad vial, fiscalización inteligente, trazabilidad de evidencia y soluciones B2G."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrap">
+        <div class="logo">
+          <img src="./images/logo-flicker-traffic.png" alt="Flicker Traffic" />
+        </div>
+        <nav class="nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#tecnologia">Tecnología</a>
+          <a href="#soluciones">Soluciones</a>
+          <a href="#gobernanza">Gobernanza</a>
+          <a href="#galeria">Galería</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
       </div>
-      <nav class="nav">
+    </header>
+    <div class="nav-backdrop"></div>
+    <div class="nav-modal">
+      <button class="nav-modal__close" aria-label="Cerrar menú">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        >
+          <line x1="3" y1="3" x2="17" y2="17" />
+          <line x1="17" y1="3" x2="3" y2="17" />
+        </svg>
+      </button>
+      <nav class="nav-modal__nav">
         <a href="#inicio">Inicio</a>
         <a href="#tecnologia">Tecnología</a>
         <a href="#soluciones">Soluciones</a>
@@ -23,331 +58,354 @@
         <a href="#nosotros">Nosotros</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
     </div>
-  </header>
-  <div class="nav-backdrop"></div>
-  <div class="nav-modal">
-    <button class="nav-modal__close" aria-label="Cerrar menú">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-        <line x1="3" y1="3" x2="17" y2="17"/>
-        <line x1="17" y1="3" x2="3" y2="17"/>
-      </svg>
-    </button>
-    <nav class="nav-modal__nav">
-      <a href="#inicio">Inicio</a>
-      <a href="#tecnologia">Tecnología</a>
-      <a href="#soluciones">Soluciones</a>
-      <a href="#gobernanza">Gobernanza</a>
-      <a href="#galeria">Galería</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </div>
 
-  <section id="inicio" class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    
-    <div class="hero-container">
-      <div class="hero-content">
-        <p class="hero-eyebrow">B2G Technology Solutions</p>
-  
-        <div class="hero-divider"></div>
-  
-        <h1 class="hero-title">FLICKER <span>3D</span></h1>
-  
-        <p class="hero-subtitle">De la fotomulta a una seguridad vial inteligente</p>
-  
-        <div class="hero-divider"></div>
-  
-        <p class="hero-body">
-          Tecnología de <strong>visión estereoscópica 3D</strong> para fiscalización precisa, evidencia verificable, reducción de siniestralidad y fortalecimiento de la gobernanza vial.
-        </p>
-  
-        <div class="hero-actions">
-          <a class="btn-hero-primary" href="#tecnologia">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6.5" stroke="#111" stroke-width="1.2"/><polygon points="5.5,4.5 9.5,7 5.5,9.5" fill="#111"/></svg>
-            Conocer la tecnología
-          </a>
-          <a class="btn-hero-secondary" href="#contacto">
-            Solicitar información
-          </a>
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">B2G Technology Solutions</p>
+
+          <div class="hero-divider"></div>
+
+          <h1 class="hero-title">FLICKER <span>3D</span></h1>
+
+          <p class="hero-subtitle">De la fotomulta a una seguridad vial inteligente</p>
+
+          <div class="hero-divider"></div>
+
+          <p class="hero-body">
+            Tecnología de <strong>visión estereoscópica 3D</strong> para fiscalización precisa,
+            evidencia verificable, reducción de siniestralidad y fortalecimiento de la gobernanza
+            vial.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn-hero-primary" href="#tecnologia">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <circle cx="7" cy="7" r="6.5" stroke="#111" stroke-width="1.2" />
+                <polygon points="5.5,4.5 9.5,7 5.5,9.5" fill="#111" />
+              </svg>
+              Conocer la tecnología
+            </a>
+            <a class="btn-hero-secondary" href="#contacto"> Solicitar información </a>
+          </div>
+        </div>
+
+        <div class="hero-product">
+          <img src="images/flicker3d-product_recortado_sin_fondo.webp" alt="Flicker 3D" />
         </div>
       </div>
-  
-      <div class="hero-product">
-        <img src="images/flicker3d-product_recortado_sin_fondo.webp" alt="Flicker 3D">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section intro">
-    <div class="container two-col">
-      <div>
-        <p class="section-kicker">Visión estratégica</p>
-        <h2>Una plataforma pensada para salvar vidas, no solo sancionar</h2>
-        <p>
-          Flicker Traffic plantea un cambio de paradigma en la gestión del tránsito:
-          pasar de esquemas tradicionales de recaudo a modelos de seguridad vial
-          inteligente, con tecnología robusta, evidencia trazable y soporte técnico local.
-        </p>
-      </div>
-      <div class="highlight-box">
-        <div class="stat">+99%</div>
-        <p>Precisión proyectada en medición y soporte técnico para operación en entornos reales.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="tecnologia" class="section section-dark">
-    <div class="container">
-      <p class="section-kicker">Tecnología Flicker3D</p>
-      <h2>Precisión espacial, trazabilidad y visión artificial aplicada al tránsito</h2>
-
-      <div class="grid cards-4">
-        <article class="card">
-          <h3>Visión estereoscópica 3D</h3>
+    <section class="section intro">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">Visión estratégica</p>
+          <h2>Una plataforma pensada para salvar vidas, no solo sancionar</h2>
           <p>
-            Dos cámaras simultáneas para percibir profundidad, posición y trayectoria,
-            eliminando limitaciones propias de sistemas planos o radáricos convencionales.
+            Flicker Traffic plantea un cambio de paradigma en la gestión del tránsito: pasar de
+            esquemas tradicionales de recaudo a modelos de seguridad vial inteligente, con
+            tecnología robusta, evidencia trazable y soporte técnico local.
           </p>
-        </article>
-
-        <article class="card">
-          <h3>Sin efecto coseno</h3>
-          <p>
-            Medición más confiable en rectas, curvas y geometrías complejas,
-            con mayor solidez técnica frente a controversias.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>OCR e IA contextualizada</h3>
-          <p>
-            Lectura automática de placas y clasificación vehicular adaptadas
-            al contexto colombiano y a múltiples escenarios de operación.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Evidencia verificable</h3>
-          <p>
-            Captura de foto, video, metadatos y trazabilidad digital para fortalecer
-            el debido proceso y la legitimidad institucional.
-          </p>
-        </article>
-      </div>
-      <div class="tech-demo-grid">
-        <p class="tech-demo-text">
-          Nuestros productos utilizan la única tecnología de cámaras estéreo <b>de alta velocidad (270 fps)</b> en el mundo para medir con precisión la <b>velocidad</b> de los vehículos.
-          <br><br>
-          Calculamos la disparidad entre las imágenes de la <span style="color: #00d4fe; font-weight: 700">cámara izquierda</span> y la <span style="color: #fe0000; font-weight: 700">cámara derecha</span> tal como lo hacen los humanos y los animales con sus ojos, pero a una velocidad y precisión mucho mayores.
-        </p>
-        <div class="tech-demo-video">
-          <video autoplay loop muted playsinline preload="auto" aria-label="Una escena de vehículos pasando por una vía, combinando la vista de las cámaras izquierda y derecha.">
-            <source src="assets/stereo_x2slow.mp4" type="video/mp4">
-          </video>
         </div>
-        <p class="tech-demo-text">
-          Esto nos permite <span style="color: #6eb5ff">calcular continuamente la posición 3D</span> de los vehículos que pasan y detectar de manera confiable el <b>exceso de velocidad</b> y otros tipos de infracciones de tránsito.
-          <br><br>
-          Cuando se combina con nuestro software de <b>Detección de Placas</b> y <b>Clasificación de Vehículos</b> basado en IA, el resultado es una solución integral para control y sanción.
-        </p>
-        <div class="tech-demo-video">
-          <video autoplay loop muted playsinline preload="auto" aria-label="La misma escena de vehículos pasando por una vía, con una sola vista y superposiciones que muestran las coordenadas 3D calculadas para cada vehículo.">
-            <source src="assets/cajas_x2slow.mp4" type="video/mp4">
-          </video>
+        <div class="highlight-box">
+          <div class="stat">+99%</div>
+          <p>
+            Precisión proyectada en medición y soporte técnico para operación en entornos reales.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="soluciones" class="section">
-    <div class="container">
-      <p class="section-kicker">Soluciones</p>
-      <h2>Aplicaciones para fiscalización, prevención y análisis vial</h2>
+    <section id="tecnologia" class="section section-dark">
+      <div class="container">
+        <p class="section-kicker">Tecnología Flicker3D</p>
+        <h2>Precisión espacial, trazabilidad y visión artificial aplicada al tránsito</h2>
 
-      <div class="grid cards-4">
-        <article class="card light">
-          <h3>Control de velocidad</h3>
-          <p>Medición precisa en corredores, zonas urbanas, rectas y tramos complejos.</p>
-        </article>
+        <div class="grid cards-4">
+          <article class="card">
+            <h3>Visión estereoscópica 3D</h3>
+            <p>
+              Dos cámaras simultáneas para percibir profundidad, posición y trayectoria, eliminando
+              limitaciones propias de sistemas planos o radáricos convencionales.
+            </p>
+          </article>
 
-        <article class="card light">
-          <h3>Semáforos en rojo</h3>
-          <p>Detección y trazabilidad de cruces indebidos en intersecciones controladas.</p>
-        </article>
+          <article class="card">
+            <h3>Sin efecto coseno</h3>
+            <p>
+              Medición más confiable en rectas, curvas y geometrías complejas, con mayor solidez
+              técnica frente a controversias.
+            </p>
+          </article>
 
-        <article class="card light">
-          <h3>Clasificación vehicular</h3>
-          <p>Diferenciación automática entre motos, livianos, pesados y otras categorías.</p>
-        </article>
+          <article class="card">
+            <h3>OCR e IA contextualizada</h3>
+            <p>
+              Lectura automática de placas y clasificación vehicular adaptadas al contexto
+              colombiano y a múltiples escenarios de operación.
+            </p>
+          </article>
 
-        <article class="card light">
-          <h3>Analítica de tráfico</h3>
-          <p>Datos para planeación, medición de impacto, comportamiento y gestión institucional.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="gobernanza" class="section section-dark">
-    <div class="container">
-      <p class="section-kicker">Gobernanza vial</p>
-      <h2>Tecnología alineada con seguridad vial, legitimidad y operación responsable</h2>
-
-      <div class="grid cards-3">
-        <article class="card">
-          <h3>Marco normativo</h3>
-          <p>
-            Enfoque orientado a seguridad vial, trazabilidad de evidencia y cumplimiento
-            técnico dentro del ecosistema SAST y de transporte inteligente.
+          <article class="card">
+            <h3>Evidencia verificable</h3>
+            <p>
+              Captura de foto, video, metadatos y trazabilidad digital para fortalecer el debido
+              proceso y la legitimidad institucional.
+            </p>
+          </article>
+        </div>
+        <div class="tech-demo-grid">
+          <p class="tech-demo-text">
+            Nuestros productos utilizan la única tecnología de cámaras estéreo
+            <b>de alta velocidad (270 fps)</b> en el mundo para medir con precisión la
+            <b>velocidad</b> de los vehículos. <br /><br />
+            Calculamos la disparidad entre las imágenes de la
+            <span style="color: #00d4fe; font-weight: 700">cámara izquierda</span> y la
+            <span style="color: #fe0000; font-weight: 700">cámara derecha</span> tal como lo hacen
+            los humanos y los animales con sus ojos, pero a una velocidad y precisión mucho mayores.
           </p>
-        </article>
-
-        <article class="card">
-          <h3>Implementación llave en mano</h3>
-          <p>
-            Diagnóstico, despliegue, integración, soporte técnico, operación y
-            acompañamiento institucional.
+          <div class="tech-demo-video">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              aria-label="Una escena de vehículos pasando por una vía, combinando la vista de las cámaras izquierda y derecha."
+            >
+              <source src="assets/stereo_x2slow.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="tech-demo-text">
+            Esto nos permite
+            <span style="color: #6eb5ff">calcular continuamente la posición 3D</span> de los
+            vehículos que pasan y detectar de manera confiable el <b>exceso de velocidad</b> y otros
+            tipos de infracciones de tránsito. <br /><br />
+            Cuando se combina con nuestro software de <b>Detección de Placas</b> y
+            <b>Clasificación de Vehículos</b> basado en IA, el resultado es una solución integral
+            para control y sanción.
           </p>
-        </article>
+          <div class="tech-demo-video">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              aria-label="La misma escena de vehículos pasando por una vía, con una sola vista y superposiciones que muestran las coordenadas 3D calculadas para cada vehículo."
+            >
+              <source src="assets/cajas_x2slow.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <article class="card">
-          <h3>Soporte local</h3>
+    <section id="soluciones" class="section">
+      <div class="container">
+        <p class="section-kicker">Soluciones</p>
+        <h2>Aplicaciones para fiscalización, prevención y análisis vial</h2>
+
+        <div class="grid cards-4">
+          <article class="card light">
+            <h3>Control de velocidad</h3>
+            <p>Medición precisa en corredores, zonas urbanas, rectas y tramos complejos.</p>
+          </article>
+
+          <article class="card light">
+            <h3>Semáforos en rojo</h3>
+            <p>Detección y trazabilidad de cruces indebidos en intersecciones controladas.</p>
+          </article>
+
+          <article class="card light">
+            <h3>Clasificación vehicular</h3>
+            <p>Diferenciación automática entre motos, livianos, pesados y otras categorías.</p>
+          </article>
+
+          <article class="card light">
+            <h3>Analítica de tráfico</h3>
+            <p>
+              Datos para planeación, medición de impacto, comportamiento y gestión institucional.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gobernanza" class="section section-dark">
+      <div class="container">
+        <p class="section-kicker">Gobernanza vial</p>
+        <h2>Tecnología alineada con seguridad vial, legitimidad y operación responsable</h2>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Marco normativo</h3>
+            <p>
+              Enfoque orientado a seguridad vial, trazabilidad de evidencia y cumplimiento técnico
+              dentro del ecosistema SAST y de transporte inteligente.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Implementación llave en mano</h3>
+            <p>
+              Diagnóstico, despliegue, integración, soporte técnico, operación y acompañamiento
+              institucional.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Soporte local</h3>
+            <p>
+              Cercanía operativa, conocimiento del contexto colombiano y acompañamiento para
+              proyectos B2G.
+            </p>
+          </article>
+        </div>
+
+        <div class="downloads">
+          <a
+            class="download-link"
+            href="assets/Flicker3D_Seguridad_Vial_3D.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Presentación Seguridad Vial 3D</a
+          >
+          <a
+            class="download-link"
+            href="assets/Flicker3D_Gobernanza_Vial.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Presentación Gobernanza Vial</a
+          >
+          <a
+            class="download-link"
+            href="assets/Flicker3D_National_Road_Safety_Vision.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Presentación National Road Safety Vision</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <div class="container">
+        <p class="section-kicker">Galería real</p>
+        <h2>Imágenes reales del sistema y su despliegue en campo</h2>
+
+        <div class="gallery">
+          <img src="images/camera1.jpg" alt="Equipo Flicker instalado en poste" />
+          <img src="images/camera2.jpg" alt="Equipo Flicker con iluminación activa" />
+          <img src="images/camera3.jpg" alt="Vista completa del sistema instalado" />
+          <img src="images/camera4.jpg" alt="Cabina y poste del sistema Flicker" />
+          <img src="images/camera5.jpg" alt="Equipo Flicker en operación" />
+          <img src="images/camera6.jpg" alt="Detalle frontal del sistema Flicker" />
+          <img src="images/camera7.jpg" alt="Vista de instalación en vía" />
+          <img src="images/camera8.jpg" alt="Detalle frontal adicional del sistema" />
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section section-dark">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">Nosotros</p>
+          <h2>Flicker Traffic como plataforma de tecnología vial para entidades públicas</h2>
           <p>
-            Cercanía operativa, conocimiento del contexto colombiano y acompañamiento
-            para proyectos B2G.
+            Flicker Traffic se proyecta como una marca orientada a soluciones B2G en seguridad vial,
+            fiscalización inteligente, evidencia trazable y analítica, con una propuesta visual y
+            tecnológica moderna.
           </p>
-        </article>
+        </div>
+
+        <div class="about-box">
+          <h3>Pilares de valor</h3>
+          <ul>
+            <li>Tecnología superior</li>
+            <li>Legitimidad y trazabilidad</li>
+            <li>Robustez para clima local</li>
+            <li>Soporte y cercanía operativa</li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="downloads">
-        <a class="download-link" href="assets/Flicker3D_Seguridad_Vial_3D.pdf" target="_blank" rel="noopener noreferrer">Presentación Seguridad Vial 3D</a>
-        <a class="download-link" href="assets/Flicker3D_Gobernanza_Vial.pdf" target="_blank" rel="noopener noreferrer">Presentación Gobernanza Vial</a>
-        <a class="download-link" href="assets/Flicker3D_National_Road_Safety_Vision.pdf" target="_blank" rel="noopener noreferrer">Presentación National Road Safety Vision</a>
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-box">
+        <div>
+          <p class="section-kicker">Contacto</p>
+          <h2>Hablemos de una primera implementación</h2>
+          <p>
+            Si deseas presentar Flicker Traffic a una entidad territorial, aliado, operador o socio
+            estratégico, esta página ya funciona como base inicial.
+          </p>
+        </div>
+
+        <div class="contact-data">
+          <p><strong>Correo:</strong> info@flickertraffic.com</p>
+          <p><strong>Sitio:</strong> flickertraffic.com</p>
+          <p><strong>Ciudad base:</strong> Barranquilla, Colombia</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="galeria" class="section">
-    <div class="container">
-      <p class="section-kicker">Galería real</p>
-      <h2>Imágenes reales del sistema y su despliegue en campo</h2>
-
-      <div class="gallery">
-        <img src="images/camera1.jpg" alt="Equipo Flicker instalado en poste" />
-        <img src="images/camera2.jpg" alt="Equipo Flicker con iluminación activa" />
-        <img src="images/camera3.jpg" alt="Vista completa del sistema instalado" />
-        <img src="images/camera4.jpg" alt="Cabina y poste del sistema Flicker" />
-        <img src="images/camera5.jpg" alt="Equipo Flicker en operación" />
-        <img src="images/camera6.jpg" alt="Detalle frontal del sistema Flicker" />
-        <img src="images/camera7.jpg" alt="Vista de instalación en vía" />
-        <img src="images/camera8.jpg" alt="Detalle frontal adicional del sistema" />
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div>© Flicker Traffic</div>
+        <div>Primera versión web corporativa</div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section id="nosotros" class="section section-dark">
-    <div class="container two-col">
-      <div>
-        <p class="section-kicker">Nosotros</p>
-        <h2>Flicker Traffic como plataforma de tecnología vial para entidades públicas</h2>
-        <p>
-          Flicker Traffic se proyecta como una marca orientada a soluciones B2G
-          en seguridad vial, fiscalización inteligente, evidencia trazable y analítica,
-          con una propuesta visual y tecnológica moderna.
-        </p>
-      </div>
+    <script>
+      (function () {
+        var header = document.querySelector('.header');
+        var navToggle = document.querySelector('.nav-toggle');
+        var navBackdrop = document.querySelector('.nav-backdrop');
+        var navModalClose = document.querySelector('.nav-modal__close');
+        var lastScrollY = 0;
 
-      <div class="about-box">
-        <h3>Pilares de valor</h3>
-        <ul>
-          <li>Tecnología superior</li>
-          <li>Legitimidad y trazabilidad</li>
-          <li>Robustez para clima local</li>
-          <li>Soporte y cercanía operativa</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        // Hide on scroll
+        window.addEventListener('scroll', function () {
+          var currentScrollY = window.scrollY;
 
-  <section id="contacto" class="section contact-section">
-    <div class="container contact-box">
-      <div>
-        <p class="section-kicker">Contacto</p>
-        <h2>Hablemos de una primera implementación</h2>
-        <p>
-          Si deseas presentar Flicker Traffic a una entidad territorial, aliado,
-          operador o socio estratégico, esta página ya funciona como base inicial.
-        </p>
-      </div>
+          if (currentScrollY > lastScrollY && currentScrollY > 80) {
+            header.classList.add('header--hidden');
+          } else {
+            header.classList.remove('header--hidden');
+          }
 
-      <div class="contact-data">
-        <p><strong>Correo:</strong> info@flickertraffic.com</p>
-        <p><strong>Sitio:</strong> flickertraffic.com</p>
-        <p><strong>Ciudad base:</strong> Barranquilla, Colombia</p>
-      </div>
-    </div>
-  </section>
+          lastScrollY = currentScrollY;
+        });
 
-  <footer class="footer">
-    <div class="container footer-wrap">
-      <div>© Flicker Traffic</div>
-      <div>Primera versión web corporativa</div>
-    </div>
-  </footer>
-
-  <script>
-    (function () {
-      var header = document.querySelector('.header');
-      var navToggle = document.querySelector('.nav-toggle');
-      var navBackdrop = document.querySelector('.nav-backdrop');
-      var navModalClose = document.querySelector('.nav-modal__close');
-      var lastScrollY = 0;
-
-      // Hide on scroll
-      window.addEventListener('scroll', function () {
-        var currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY && currentScrollY > 80) {
-          header.classList.add('header--hidden');
-        } else {
-          header.classList.remove('header--hidden');
+        // Hamburger menu
+        function closeMenu() {
+          header.classList.remove('nav-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.setAttribute('aria-label', 'Abrir menú');
         }
 
-        lastScrollY = currentScrollY;
-      });
+        navToggle.addEventListener('click', function () {
+          var isOpen = header.classList.toggle('nav-open');
+          navToggle.setAttribute('aria-expanded', String(isOpen));
+          navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        });
 
-      // Hamburger menu
-      function closeMenu() {
-        header.classList.remove('nav-open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.setAttribute('aria-label', 'Abrir menú');
-      }
+        navBackdrop.addEventListener('click', closeMenu);
+        navModalClose.addEventListener('click', closeMenu);
 
-      navToggle.addEventListener('click', function () {
-        var isOpen = header.classList.toggle('nav-open');
-        navToggle.setAttribute('aria-expanded', String(isOpen));
-        navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
-      });
+        document.querySelectorAll('.nav-modal__nav a').forEach(function (link) {
+          link.addEventListener('click', closeMenu);
+        });
 
-      navBackdrop.addEventListener('click', closeMenu);
-      navModalClose.addEventListener('click', closeMenu);
-
-      document.querySelectorAll('.nav-modal__nav a').forEach(function (link) {
-        link.addEventListener('click', closeMenu);
-      });
-
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeMenu();
-      });
-    })();
-  </script>
-</body>
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') closeMenu();
+        });
+      })();
+    </script>
+  </body>
 </html>
