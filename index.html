@@ -337,19 +337,59 @@
 
     <section id="contacto" class="section contact-section">
       <div class="container contact-box">
-        <div>
-          <p class="section-kicker">Contacto</p>
-          <h2>Hablemos de una primera implementación</h2>
-          <p>
-            Si deseas presentar Flicker Traffic a una entidad territorial, aliado, operador o socio
-            estratégico, esta página ya funciona como base inicial.
-          </p>
+        <div class="contact-info-wrapper">
+          <div>
+            <p class="section-kicker">Contacto</p>
+            <h2>Hablemos de una primera implementación</h2>
+            <p>
+              Si deseas presentar Flicker Traffic a una entidad territorial, aliado, operador o socio
+              estratégico, esta página ya funciona como base inicial.
+            </p>
+          </div>
+
+          <div class="contact-data">
+            <p><strong>Correo:</strong> info@flickertraffic.com</p>
+            <p><strong>Sitio:</strong> flickertraffic.com</p>
+            <p><strong>Ciudad base:</strong> Barranquilla, Colombia</p>
+          </div>
         </div>
 
-        <div class="contact-data">
-          <p><strong>Correo:</strong> info@flickertraffic.com</p>
-          <p><strong>Sitio:</strong> flickertraffic.com</p>
-          <p><strong>Ciudad base:</strong> Barranquilla, Colombia</p>
+        <div class="contact-form-wrapper">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xlgplbrv"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="¿En qué podemos ayudarte?"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer;">
+              Enviar mensaje
+            </button>
+
+            <p class="form-privacy-note">
+              Al enviar este formulario, aceptas que la información sea procesada para responder a tu
+              solicitud.
+            </p>
+          </form>
         </div>
       </div>
     </section>

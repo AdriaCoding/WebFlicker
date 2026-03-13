@@ -737,6 +737,68 @@ header .container {
   margin: 0 auto;
 }
 
+/* --- FORMULARIO DE CONTACTO --- */
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-form-wrapper {
+  background: var(--color-bg-light);
+  padding: 32px;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border-light);
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #cdd5df;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-navy);
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-navy);
+  box-shadow: 0 0 0 3px rgba(10, 26, 43, 0.1);
+}
+
+.form-privacy-note {
+  font-size: 0.75rem;
+  color: #667085;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.contact-box {
+  align-items: stretch; /* Para que ambas columnas tengan la misma altura visual si es posible */
+}
+
 /* --- MEJORAS VISUALES: CARDS --- */
 .card {
   transition: all 0.3s ease;
