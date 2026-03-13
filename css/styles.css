@@ -108,7 +108,7 @@ img {
 
 background-image:
 linear-gradient(rgba(var(--color-navy-rgb), 0.75), rgba(var(--color-navy-rgb), 0.55)),
-url('../images/camera8.jpg');
+url('../images/hero-background.jpg');
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -579,7 +579,7 @@ position:relative;
 
 position:absolute;
 
-right:6%;
+right:4%;
 
 top:50%;
 
