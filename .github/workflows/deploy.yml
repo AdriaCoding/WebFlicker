@@ -20,7 +20,7 @@ jobs:
           server:  ftp.flickertraffic.com
           username: ftpadria@flickertraffic.com
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ${{ secrets.FTP_PROTOCOL }}
+          protocol: ftp
           port: 1257
           server-dir: /public_html/
           exclude: |
